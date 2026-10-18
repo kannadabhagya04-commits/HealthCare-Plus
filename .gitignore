@@ -1,0 +1,22 @@
+
+# React dependencies and build files
+node_modules/
+dist/
+
+# Spring Boot build files
+target/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.classpath
+.project
+.settings/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
