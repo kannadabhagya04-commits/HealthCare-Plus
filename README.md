@@ -1,79 +1,108 @@
 # HealthCare+ — Health Insurance Management System
 
-A full-stack web application designed to provide a user-friendly interface for exploring health insurance plans and managing insurance-related activities.
+A full-stack web application that helps users explore health insurance plans, manage their profiles, and track purchased policies.
 
-## Technologies Used
+## 🚀 Features
+
+- **User Registration & Login** — User authentication using JWT.
+- **Insurance Plans** — View available health insurance plans and their premiums.
+- **Policy Purchase** — Save selected insurance policies to the database.
+- **Duplicate Purchase Prevention** — Prevent users from purchasing the same plan more than once.
+- **User Profile** — View and manage user profile information.
+- **Contact Form** — Submit contact messages.
+- **REST API Documentation** — Explore and test backend APIs using Swagger UI.
+
+## 🛠️ Technologies Used
 
 ### Frontend
 - React
+- Vite
 - JavaScript
 - HTML5
 - CSS3
-- Vite
+- Axios
+- React Router
 
 ### Backend
 - Java
 - Spring Boot
+- Spring Security
+- JWT Authentication
 - Spring Data JPA
-- Maven
 - REST APIs
+- Swagger UI / OpenAPI
 
 ### Database
 - MySQL
 
-## Features
+## 🏗️ Project Architecture
 
-- User registration and login
-- Health insurance plan exploration
-- Insurance policy management
-- Premium calculator
-- Hospital information and details
-- Claims-related interface
-- User dashboard and profile
-- Contact page
+React Frontend → Spring Boot REST APIs → MySQL Database
 
-## Project Structure
+## ⚙️ Prerequisites
 
-```text
-HealthCare-Plus/
-├── health-insurance-system/   # React frontend
-├── healthcare-backend1/       # Spring Boot backend
-├── .gitignore
-└── README.md
-```
+Install the following before running the project:
 
-## Getting Started
+- Node.js and npm
+- Java JDK compatible with the backend configuration
+- Spring Tool Suite (STS) or another Java IDE
+- MySQL Server
 
-### 1. Clone the repository
+## ▶️ How to Run
 
-```bash
-git clone https://github.com/kannadabhagya04-commits/HealthCare-Plus.git
-cd HealthCare-Plus
-```
+### 1. Start the Backend
 
-### 2. Run the frontend
+1. Open the `healthcare-backend1` project in STS.
+2. Configure your MySQL connection in `application.properties`.
+3. Start `HealthcareBackend1Application.java`.
+4. Confirm that the backend runs on `http://localhost:8080`.
 
-```bash
-cd health-insurance-system
-npm install
-npm run dev
-```
+### 2. Start the Frontend
 
-### 3. Run the backend
+1. Open a terminal in the `health-insurance-system` folder.
+2. Install the dependencies:
 
-Open `healthcare-backend1` in your Java IDE as a Maven project.
+   ```bash
+   npm install
+   ```
 
-Configure your MySQL database and required environment variables in your local environment before starting the Spring Boot application.
+3. Start the development server:
 
-## Future Enhancements
+   ```bash
+   npm run dev
+   ```
 
-- Improve authentication and authorization
-- Integrate frontend and backend APIs
-- Add comprehensive validation and error handling
-- Deploy the application online
+4. Open the local URL displayed in the terminal, usually `http://localhost:5173`.
 
-## Author
+## 📚 API Documentation
 
-**Bhagya Sree**
+After starting the backend, open Swagger UI:
+
+http://localhost:8080/swagger-ui/index.html
+
+Use Swagger to explore and test the available REST API endpoints.
+
+## 🔐 Security
+
+- JWT-based authentication for protected endpoints.
+- Spring Security for endpoint access control.
+- User-specific purchased policy retrieval.
+- Duplicate policy purchase validation.
+
+## 👩‍💻 Project Purpose
+
+This project demonstrates full-stack development using React, Java, Spring Boot, REST APIs, MySQL, and JWT authentication.
+
+## 🔮 Future Enhancements
+
+- Docker containerization
+- Cloud deployment
+- Automated unit and integration tests
+- Payment gateway integration
+- Admin dashboard and policy management
+
+## 👩‍🎓 Author
+
+**Bhagyasree**
 
 GitHub: https://github.com/kannadabhagya04-commits
